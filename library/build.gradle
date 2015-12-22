@@ -7,6 +7,7 @@ version = "1.0.0"
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
+    resourcePrefix "wechatwebview"
 
     defaultConfig {
         minSdkVersion 16
@@ -28,16 +29,19 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'me.everything:overscroll-decor-android:1.0.0'
 }
-def siteUrl = 'https://github.com/sungerk/WechatWebView'      // 项目的主页
-def gitUrl = 'https://github.com/sungerk/WechatWebView.git'   // Git仓库的url
-group = "sunger.net.org.library"                                        // Maven Group ID for the artifact，一般填你唯一的包名
+def siteUrl = 'https://github.com/sungerk/WeChatWebView'
+def gitUrl = 'https://github.com/sungerk/WeChatWebView.git'
+
+group = "sunger.net.org.library"
+
 install {
     repositories.mavenInstaller {
-         pom {
+        // This generates POM.xml with proper parameters.
+        pom {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'WebView like wechat to browse the web page effect'     //项目描述
+                name 'WebView likes WeChat'      //项目描述
                 url siteUrl
                 // Set your license
                 licenses {
@@ -48,7 +52,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'sunger'     
+                        id 'sunger'       //填写的一些基本信息
                         name 'sunger'
                         email 'kcjsunger@gmail.com'
                     }
@@ -78,8 +82,10 @@ artifacts {
     archives javadocJar
     archives sourcesJar
 }
+
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
