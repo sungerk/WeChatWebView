@@ -1,6 +1,11 @@
 # WeChatWebView
 获取依赖库
-       compile 'com.mmga.metroloading:metroloading:1.0.0'
+
+```
+     compile 'sunger.net.org.library:library:1.0.0'
+
+```
+        
 
 
 仿微信下拉网页由x提供效果
