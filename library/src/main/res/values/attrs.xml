@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeChatWebView">
+        <attr name="underViewLayout" format="reference" />
+        <attr name="touchDragRatioFwd" format="float" />
+        <attr name="touchDragRatioBck" format="float" />
+        <attr name="decelerateFactor" format="float" />
+    </declare-styleable>
+</resources>

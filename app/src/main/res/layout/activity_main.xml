@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sunger.net.org.library.WeChatWebView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wechat_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:underViewLayout="@layout/view_tips"></sunger.net.org.library.WeChatWebView>
+
